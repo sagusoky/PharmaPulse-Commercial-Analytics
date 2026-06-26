@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.TableRelationCaptions.true...TableRelationCaptions />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pharma_cleaned' inline='true' name='federated.1ecjdlm0m6682211111o90phg1r0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pharma_cleaned' name='textscan.14i483h03rk6xq1g5u1441h6kxaw'>
+            <connection class='textscan' directory='/Users/shloka/Desktop/PharmaPulse-Commercial-Analytics/data' filename='pharma_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation _.fcp.TableRelationCaptions.true...caption='Pharma Sales' connection='textscan.14i483h03rk6xq1g5u1441h6kxaw' name='pharma_cleaned.csv' table='[pharma_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='datum' ordinal='0' />
+            <column datatype='real' name='M01AB' ordinal='1' />
+            <column datatype='real' name='M01AE' ordinal='2' />
+            <column datatype='real' name='N02BA' ordinal='3' />
+            <column datatype='real' name='N02BE' ordinal='4' />
+            <column datatype='real' name='N05B' ordinal='5' />
+            <column datatype='real' name='N05C' ordinal='6' />
+            <column datatype='real' name='R03' ordinal='7' />
+            <column datatype='real' name='R06' ordinal='8' />
+            <column datatype='integer' name='Year' ordinal='9' />
+            <column datatype='integer' name='Month' ordinal='10' />
+            <column datatype='integer' name='Hour' ordinal='11' />
+            <column datatype='string' name='Weekday Name' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>datum</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[datum]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>datum</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>M01AB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[M01AB]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>M01AB</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>M01AE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[M01AE]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>M01AE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N02BA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[N02BA]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>N02BA</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N02BE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[N02BE]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>N02BE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N05B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[N05B]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>N05B</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N05C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[N05C]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>N05C</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R03</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R03]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>R03</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R06</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R06]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>R06</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekday Name]</local-name>
+            <parent-name>[pharma_cleaned.csv]</parent-name>
+            <remote-alias>Weekday Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Sales' datatype='real' name='[Calculation_0826780652953601]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[M01AB] +&#10;[M01AE] +&#10;[N02BA] +&#10;[N02BE] +&#10;[N05B] +&#10;[N05C] +&#10;[R03] +&#10;[R06]' />
+      </column>
+      <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+      <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+      <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Weekday Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Pharma Sales' datatype='table' name='[__tableau_internal_object_id__].[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]' role='measure' type='quantitative' />
+      <column caption='Datum' datatype='date' name='[datum]' role='dimension' type='ordinal' />
+      <column-instance column='[Weekday Name]' derivation='None' name='[none:Weekday Name:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/02/pn3p9vz92bsb_3yvpn56bq100000gp/T/tableau-temp/#TableauTemp_1ti4pr3078awd21evt9pc0f6lzx0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2026 04:35:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>datum</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[datum]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>datum</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>M01AB</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[M01AB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>M01AB</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>181</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>M01AE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[M01AE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>M01AE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>566</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>N02BA</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[N02BA]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>N02BA</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>N02BE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[N02BE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>N02BE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>579</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>N05B</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[N05B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>N05B</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>N05C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[N05C]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>N05C</remote-alias>
+              <ordinal>6</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>R03</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[R03]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>R03</remote-alias>
+              <ordinal>7</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>R06</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[R06]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>R06</remote-alias>
+              <ordinal>8</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>9</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>10</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>11</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekday Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weekday Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekday Name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>pharma_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Weekday Name:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='datum' />
+        <field-sort-custom-order field='M01AB' />
+        <field-sort-custom-order field='M01AE' />
+        <field-sort-custom-order field='N02BA' />
+        <field-sort-custom-order field='N02BE' />
+        <field-sort-custom-order field='N05B' />
+        <field-sort-custom-order field='N05C' />
+        <field-sort-custom-order field='Calculation_0826780652953601' />
+        <field-sort-custom-order field='R03' />
+        <field-sort-custom-order field='Calculation_0826780652482560' />
+        <field-sort-custom-order field='R06' />
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='Month' />
+        <field-sort-custom-order field='Hour' />
+        <field-sort-custom-order field='Weekday Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Pharma Sales' id='pharma_cleaned.csv_847E6BF2E7294B20A79F0963C0294044'>
+            <properties context=''>
+              <relation _.fcp.TableRelationCaptions.true...caption='Pharma Sales' connection='textscan.14i483h03rk6xq1g5u1441h6kxaw' name='pharma_cleaned.csv' table='[pharma_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='datum' ordinal='0' />
+                  <column datatype='real' name='M01AB' ordinal='1' />
+                  <column datatype='real' name='M01AE' ordinal='2' />
+                  <column datatype='real' name='N02BA' ordinal='3' />
+                  <column datatype='real' name='N02BE' ordinal='4' />
+                  <column datatype='real' name='N05B' ordinal='5' />
+                  <column datatype='real' name='N05C' ordinal='6' />
+                  <column datatype='real' name='R03' ordinal='7' />
+                  <column datatype='real' name='R06' ordinal='8' />
+                  <column datatype='integer' name='Year' ordinal='9' />
+                  <column datatype='integer' name='Month' ordinal='10' />
+                  <column datatype='integer' name='Hour' ordinal='11' />
+                  <column datatype='string' name='Weekday Name' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sales Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Drug Sales Distribution</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business Question</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Which pharmaceutical drug category contributes the highest overall sales?</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Insight</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>N02Be is the top-selling drug category with approximately </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>63K</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> units sold, contributing significantly more than any other category. N05B and R03 follow as the next highest contributors, while N05C has the lowest demand. This insight helps identify high-performing drug categories for inventory planning and sales forecasting. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pharma_cleaned' name='federated.1ecjdlm0m6682211111o90phg1r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ecjdlm0m6682211111o90phg1r0'>
+            <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+            <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+            <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+            <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05B]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05C]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R03]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R06]' role='measure' type='quantitative' />
+            <column-instance column='[M01AB]' derivation='Sum' name='[sum:M01AB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[M01AE]' derivation='Sum' name='[sum:M01AE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BA]' derivation='Sum' name='[sum:N02BA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BE]' derivation='Sum' name='[sum:N02BE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05B]' derivation='Sum' name='[sum:N05B:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05C]' derivation='Sum' name='[sum:N05C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R03]' derivation='Sum' name='[sum:R03:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R06]' derivation='Sum' name='[sum:R06:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05B:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R03:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R06:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05B:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R03:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AB:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R06:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05C:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]' scope='rows' value='Total Sales' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]</rows>
+        <cols>[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{4AFB9D25-7D5F-42ED-B875-E35987E422E7}' />
+    </worksheet>
+    <worksheet name='Sales by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Monthly Pharmaceutical Sales Trend</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business Question</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>How do pharmaceutical sales change throughout the year?</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business Insight</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Sales are highest at the beginning of the year (January) and gradually decline until July, indicating a seasonal reduction in demand. Sales recover from August onward, reaching another peak around October before declining slightly at the end of the year. These trends can help inventory managers optimize stock levels, forecast demand, and plan promotional campaigns during slower months. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pharma_cleaned' name='federated.1ecjdlm0m6682211111o90phg1r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ecjdlm0m6682211111o90phg1r0'>
+            <column caption='Total Sales' datatype='real' name='[Calculation_0826780652953601]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[M01AB] +&#10;[M01AE] +&#10;[N02BA] +&#10;[N02BE] +&#10;[N05B] +&#10;[N05C] +&#10;[R03] +&#10;[R06]' />
+            </column>
+            <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+            <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+            <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05B]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05C]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R03]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R06]' role='measure' type='quantitative' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0826780652953601]' derivation='Sum' name='[sum:Calculation_0826780652953601:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[M01AB]' derivation='Sum' name='[sum:M01AB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[M01AE]' derivation='Sum' name='[sum:M01AE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BA]' derivation='Sum' name='[sum:N02BA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BE]' derivation='Sum' name='[sum:N02BE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05B]' derivation='Sum' name='[sum:N05B:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05C]' derivation='Sum' name='[sum:N05C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R03]' derivation='Sum' name='[sum:R03:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R06]' derivation='Sum' name='[sum:R06:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05B:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R03:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R06:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' scope='rows' value='Total Sales of Month' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[Month: <[federated.1ecjdlm0m6682211111o90phg1r0].[none:Month:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Total Sales:</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[<[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='2.1546962261199951' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]</rows>
+        <cols>[federated.1ecjdlm0m6682211111o90phg1r0].[none:Month:qk]</cols>
+      </table>
+      <simple-id uuid='{D86BF305-5AE0-4493-848A-4F869947CFEC}' />
+    </worksheet>
+    <worksheet name='Sales by Weekday'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business Question</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Which day of the week generates the highest pharmaceutical sales?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Insight</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Saturday records the highest sales (~19.8K), while Thursday has the lowest (~17.2K). Weekend demand is slightly stronger than weekdays, suggesting increased customer purchases before or during weekends. This insight can help optimize staffing and inventory planning.</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pharma_cleaned' name='federated.1ecjdlm0m6682211111o90phg1r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ecjdlm0m6682211111o90phg1r0'>
+            <column caption='Total Sales' datatype='real' name='[Calculation_0826780652953601]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[M01AB] +&#10;[M01AE] +&#10;[N02BA] +&#10;[N02BE] +&#10;[N05B] +&#10;[N05C] +&#10;[R03] +&#10;[R06]' />
+            </column>
+            <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+            <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+            <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+            <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05B]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05C]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R03]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R06]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weekday Name]' role='dimension' type='nominal' />
+            <column-instance column='[Weekday Name]' derivation='None' name='[none:Weekday Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0826780652953601]' derivation='Sum' name='[sum:Calculation_0826780652953601:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ecjdlm0m6682211111o90phg1r0].[none:Weekday Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff4b' />
+            <format attr='stroke-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ecjdlm0m6682211111o90phg1r0].[none:Weekday Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3403314352035522' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]</rows>
+        <cols>[federated.1ecjdlm0m6682211111o90phg1r0].[none:Weekday Name:nk]</cols>
+      </table>
+      <simple-id uuid='{5E84FDDD-AAA6-425D-8D7B-FE54854CEA06}' />
+    </worksheet>
+    <worksheet name='Sales by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Yearly Pharmaceutical Sales Trend
+</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business Question</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>How have pharmaceutical sales changed over the years?</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Insight</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Sales fluctuate across the six-year period, indicating changing market demand and seasonal business cycles. Monitoring yearly trends helps management forecast demand, allocate budgets, and identify long-term growth or decline.</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pharma_cleaned' name='federated.1ecjdlm0m6682211111o90phg1r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ecjdlm0m6682211111o90phg1r0'>
+            <column caption='Total Sales' datatype='real' name='[Calculation_0826780652953601]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[M01AB] +&#10;[M01AE] +&#10;[N02BA] +&#10;[N02BE] +&#10;[N05B] +&#10;[N05C] +&#10;[R03] +&#10;[R06]' />
+            </column>
+            <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+            <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+            <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+            <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05B]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05C]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R03]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R06]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0826780652953601]' derivation='Sum' name='[sum:Calculation_0826780652953601:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='0' />
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Light' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ecjdlm0m6682211111o90phg1r0].[sum:Calculation_0826780652953601:qk]</rows>
+        <cols>[federated.1ecjdlm0m6682211111o90phg1r0].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{4B19768D-0307-47E6-905A-D03DCCB81087}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E942EE35-4BFB-4CA0-9CF0-C2C48EE6E940}' />
+    </worksheet>
+    <worksheet name='Total Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> Total Sales by Drug </run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>This is the most important chart because it immediately answers:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Which medicines contribute the most to the company’s sales?</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>N02BE is the highest-selling drug category by a significant margin, making it the primary contributor to overall pharmaceutical sales. N05C records the lowest sales, indicating either niche usage or lower market demand. The company should prioritize inventory planning for high-performing products while investigating the factors affecting low-performing drugs.</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pharma_cleaned' name='federated.1ecjdlm0m6682211111o90phg1r0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ecjdlm0m6682211111o90phg1r0'>
+            <column caption='M01Ab' datatype='real' name='[M01AB]' role='measure' type='quantitative' />
+            <column caption='M01Ae' datatype='real' name='[M01AE]' role='measure' type='quantitative' />
+            <column caption='N02Ba' datatype='real' name='[N02BA]' role='measure' type='quantitative' />
+            <column caption='N02Be' datatype='real' name='[N02BE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05B]' role='measure' type='quantitative' />
+            <column datatype='real' name='[N05C]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R03]' role='measure' type='quantitative' />
+            <column datatype='real' name='[R06]' role='measure' type='quantitative' />
+            <column-instance column='[M01AB]' derivation='Sum' name='[sum:M01AB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[M01AE]' derivation='Sum' name='[sum:M01AE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BA]' derivation='Sum' name='[sum:N02BA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N02BE]' derivation='Sum' name='[sum:N02BE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05B]' derivation='Sum' name='[sum:N05B:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N05C]' derivation='Sum' name='[sum:N05C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R03]' derivation='Sum' name='[sum:R03:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[R06]' derivation='Sum' name='[sum:R06:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05B:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05C:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R03:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R06:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05B:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R03:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AB:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:M01AE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N02BA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:R06:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ecjdlm0m6682211111o90phg1r0].[sum:N05C:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]' scope='cols' value='Total Sales' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ecjdlm0m6682211111o90phg1r0].[:Measure Names]</rows>
+        <cols>[federated.1ecjdlm0m6682211111o90phg1r0].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{006243D0-73AE-404B-96B6-4FCC9B81CFCB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1200' minheight='900' minwidth='1200' sizing-mode='range' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7FFF0A3B-7D88-4E8D-9670-41B1F6C7C7BF}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='12' param='horz' type-v2='layout-flow' w='97538' x='1231' y='930'>
+            <zone h='98140' id='9' param='horz' type-v2='layout-flow' w='72923' x='1231' y='930'>
+              <zone h='98140' id='7' type-v2='layout-basic' w='72923' x='1231' y='930'>
+                <zone h='98140' id='3' name='Total Sales' w='24307' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='98140' id='5' name='Sales by Month' w='24308' x='49846' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='98140' id='10' name='Sales by Weekday' w='24308' x='25538' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98140' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='930'>
+              <zone h='19302' id='13' name='Sales by Weekday' pane-specification-id='0' param='[federated.1ecjdlm0m6682211111o90phg1r0].[none:Weekday Name:nk]' type-v2='color' w='24615' x='74154' y='930'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C13EB930-CD8D-4FB0-B6F3-3D44648FB4E0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CE303AD-469D-46FE-9877-64AE6D66AE5C}' />
+    </window>
+    <window class='worksheet' name='Total Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5AA7DEB3-21CE-48A8-8DF4-C903BA3A32F0}' />
+    </window>
+    <window class='worksheet' name='Sales by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{218C9AB5-8B3D-4EC1-A193-B1163F6C4A2F}' />
+    </window>
+    <window class='worksheet' name='Sales by Weekday'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ecjdlm0m6682211111o90phg1r0].[none:Weekday Name:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{146FD9BB-825A-434C-A56D-703214A9A759}' />
+    </window>
+    <window class='worksheet' name='Sales by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99F29B10-193F-4261-B62D-48C53E4FBE18}' />
+    </window>
+    <window class='worksheet' name='Sales Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{189785C6-0FD4-4020-A667-039AC7DB854C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{821D0E3A-5C47-459C-A43B-F24CC15E2850}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sales by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales by Weekday'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Sales' />
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{6F65CD6A-A2B6-4133-A2AF-A7D5D99802A0}' />
+    </window>
+  </windows>
+</workbook>
